@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO DASAR ===== -->
+  <title>HMTB UDINUS — Himpunan Mahasiswa Teknik Biomedis</title>
+  <meta name="description" content="Website resmi Himpunan Mahasiswa Teknik Biomedis Universitas Dian Nuswantoro Semarang.">
+  <meta name="theme-color" content="#07111F">
+  <meta property="og:title" content="HMTB UDINUS — Himpunan Mahasiswa Teknik Biomedis">
+  <meta property="og:description" content="Website resmi Himpunan Mahasiswa Teknik Biomedis Universitas Dian Nuswantoro Semarang.">
+  <link rel="icon" type="image/png" href="assets/logo/logo-hmtb.png">
+
+  <!-- ===== FONT ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ===== ICON (Font Awesome) ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS dimuat di head agar fungsi placeholder gambar siap sebelum gambar dimuat -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+
+      <a href="#home" class="brand" aria-label="Beranda HMTB UDINUS">
+        <span class="nav-logos">
+          <!-- Logo asli: simpan file di assets/logo/ dengan nama sesuai di bawah ini -->
+          <span class="logo-badge"><img src="assets/logo/logo-hmtb.png" alt="Logo HMTB" onerror="window.imgFallback&&imgFallback(this)"></span>
+          <span class="logo-badge light"><img src="assets/logo/logo-udinus.png" alt="Logo UDINUS" onerror="window.imgFallback&&imgFallback(this)"></span>
+          <span class="logo-badge"><img src="assets/logo/logo-kabinet.png" alt="Logo Kabinet Nirwana Arthasena" onerror="window.imgFallback&&imgFallback(this)"></span>
+        </span>
+        <span class="brand-text">
+          <strong>HMTB UDINUS</strong>
+          <small>Teknik Biomedis</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#visi-misi" class="nav-link">Visi &amp; Misi</a>
+        <a href="#program" class="nav-link">Program Kerja</a>
+        <a href="#struktur" class="nav-link">Struktur</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ================= HERO / HOME ================= -->
+  <section id="home" class="hero">
+    <div class="hero-deco" aria-hidden="true">
+      <span class="deco-plus" style="top:20%;left:5%">+</span>
+      <span class="deco-plus" style="top:70%;left:46%">+</span>
+      <span class="deco-plus" style="top:26%;right:6%">+</span>
+      <span class="deco-dot" style="top:16%;left:38%"></span>
+      <span class="deco-dot" style="bottom:32%;left:13%"></span>
+      <span class="deco-dot" style="top:34%;right:27%"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow reveal">Organisasi Mahasiswa Teknik Biomedis</p>
+        <h1 class="hero-title">
+          <span class="cyan reveal" style="--rd:.08s">HMTB</span>
+          <span class="white reveal" style="--rd:.16s">UDINUS</span>
+        </h1>
+        <p class="hero-sub reveal" style="--rd:.24s">
+          Himpunan Mahasiswa Teknik Biomedis<br>Universitas Dian Nuswantoro Semarang
+        </p>
+        <p class="hero-tagline reveal" style="--rd:.3s">INNOVATE <span>&bull;</span> INTEGRATE <span>&bull;</span> IMPACT</p>
+        <div class="hero-actions reveal" style="--rd:.38s">
+          <a href="#tentang" class="btn btn-primary">Tentang HMTB <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#kegiatan" class="btn btn-ghost">Lihat Kegiatan</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal" style="--rd:.25s">
+        <figure class="photo-frame">
+          <img src="assets/images/hero.jpg" alt="Mahasiswa Teknik Biomedis UDINUS" onerror="window.imgFallback&&imgFallback(this)">
+        </figure>
+      </div>
+    </div>
+
+    <!-- Garis ECG (digambar oleh JavaScript, dianimasikan lewat CSS) -->
+    <svg class="hero-ecg" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+      <path id="ecgHero" pathLength="1000"/>
+    </svg>
+  </section>
+
+  <!-- ================= GALERI KEGIATAN ================= -->
+  <section id="kegiatan" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow"><span class="num-chip">01</span> GALERI</span>
+        <h2>Kegiatan HMTB</h2>
+        <p class="section-sub">Berbagai kegiatan dan momen HMTB UDINUS</p>
+      </div>
+      <!-- Foto kegiatan diisi otomatis dari js/script.js (data: kegiatan) -->
+      <div class="gallery" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= TENTANG ================= -->
+  <section id="tentang" class="section">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <div class="section-head about-head">
+          <span class="section-eyebrow"><span class="num-chip">02</span> TENTANG</span>
+          <h2>Tentang HMTB</h2>
+        </div>
+        <!-- EDIT: teks tentang HMTB (boleh diubah langsung di sini) -->
+        <p>Himpunan Mahasiswa Teknik Biomedis (HMTB) merupakan wadah mahasiswa Teknik Biomedis Universitas Dian Nuswantoro untuk berkembang, berkolaborasi, dan berkontribusi baik dalam bidang akademik maupun non-akademik.</p>
+        <p>HMTB hadir sebagai rumah bersama bagi mahasiswa Teknik Biomedis dalam mengembangkan potensi, membangun relasi, meningkatkan kemampuan, serta menciptakan kegiatan yang memberikan manfaat bagi mahasiswa dan lingkungan kampus.</p>
+
+        <div class="about-pillars">
+          <span class="pillar"><i class="fa-solid fa-bolt"></i> INNOVATE</span>
+          <span class="pillar"><i class="fa-solid fa-heart-pulse"></i> INTEGRATE</span>
+          <span class="pillar"><i class="fa-solid fa-arrow-trend-up"></i> IMPACT</span>
+        </div>
+      </div>
+      <div class="photo-frame circle">
+    <img src="assets/logo/logo-hmtb.png" alt="Logo HMTB" loading="lazy" onerror="window.imgFallback&&imgFallback(this)">
+  </div>
+    </div>
+  </section>
+
+  <!-- ================= VISI & MISI ================= -->
+  <section id="visi-misi" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow"><span class="num-chip">03</span> ARAH ORGANISASI</span>
+        <h2>Visi &amp; Misi</h2>
+      </div>
+
+      <article class="visi-card reveal">
+        <i class="fa-solid fa-quote-right visi-quote" aria-hidden="true"></i>
+        <p class="visi-label"><i class="fa-solid fa-compass"></i> VISI</p>
+        <!-- EDIT: teks visi -->
+        <p class="visi-text">Mewujudkan HMTB sebagai himpunan yang harmonis, progresif, dan berdampak melalui tata kelola organisasi yang terbuka, kolaborasi yang kuat, serta pengembangan potensi seluruh mahasiswa Teknik Biomedis.</p>
+      </article>
+
+      <h3 class="misi-title reveal">Misi</h3>
+      <div class="misi-grid">
+        <article class="misi-card reveal">
+          <span class="misi-num">01</span>
+          <p>Membangun HMTB sebagai rumah bersama yang menjunjung tinggi kekeluargaan, kepedulian, dan komunikasi yang antar mahasiswa Teknik Biomedis.</p>
+        </article>
+        <article class="misi-card reveal" style="--rd:.08s">
+          <span class="misi-num">02</span>
+          <p>Menciptakan lingkungan yang mendukung perkembangan mahasiswa Teknik Biomedis baik dalam bidang akademik, organisasi, kreativitas, maupun pengembangan diri.</p>
+        </article>
+        <article class="misi-card reveal" style="--rd:.16s">
+          <span class="misi-num">03</span>
+          <p>Meningkatkan peran HMTB sebagai wadah pengembangan dan pengenalan Teknik Biomedis melalui kolaborasi, inovasi, serta kegiatan yang memberikan manfaat bagi mahasiswa dan lingkungan kampus.</p>
+        </article>
+        <article class="misi-card reveal" style="--rd:.24s">
+          <span class="misi-num">04</span>
+          <p>Mewujudkan tata kelola organisasi yang responsif, transparan, dan bertanggung jawab dalam menampung aspirasi serta memberikan dampak positif bagi seluruh mahasiswa Teknik Biomedis.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAM KERJA ================= -->
+  <section id="program" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow"><span class="num-chip">04</span> PROGRAM KERJA</span>
+        <h2>Program Kerja</h2>
+        <p class="section-sub">Program kerja HMTB sebagai ruang untuk berkembang, berkolaborasi, dan memberikan dampak.</p>
+      </div>
+
+      <div class="program-layout">
+        <!-- Program diisi otomatis dari js/script.js (data: programs) -->
+        <div class="program-list" id="programList"></div>
+
+        <aside class="program-photo reveal" style="--rd:.15s">
+          <div class="photo-frame">
+            <img src="assets/images/program.jpg" alt="Dokumentasi program kerja HMTB UDINUS" loading="lazy" onerror="window.imgFallback&&imgFallback(this)">
+          </div>
+          <p class="photo-caption"><i class="fa-solid fa-camera"></i> Dokumentasi program kerja HMTB UDINUS</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STRUKTUR ORGANISASI ================= -->
+  <section id="struktur" class="section section-alt">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="section-eyebrow"><span class="num-chip">05</span> STRUKTUR</span>
+        <h2>Struktur Organisasi</h2>
+        <p class="section-sub">Pengurus HMTB UDINUS <span class="gold-text">Periode 2026/2027</span></p>
+      </div>
+
+      <!-- Versi desktop: bagan dengan garis penghubung (dari js/script.js) -->
+      <div class="org-tree reveal" id="orgTree"></div>
+      <!-- Versi mobile: alur vertikal -->
+      <div class="org-flow reveal" id="orgFlow"></div>
+    </div>
+  </section>
+
+  <!-- ================= KONTAK / MEDIA SOSIAL ================= -->
+  <section id="kontak" class="section section-alt">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="section-eyebrow"><span class="num-chip">06</span> KONTAK</span>
+        <h2>Connect With HMTB</h2>
+        <p class="section-sub">Temukan informasi dan kegiatan terbaru HMTB UDINUS melalui media sosial kami.</p>
+      </div>
+      <!-- Media sosial diisi otomatis dari js/script.js (data: mediaSosial) -->
+      <div class="sosmed-grid" id="sosmedGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logos">
+        <span class="logo-badge"><img src="assets/logo/logo-hmtb.png" alt="Logo HMTB" onerror="window.imgFallback&&imgFallback(this)"></span>
+        <span class="logo-badge light"><img src="assets/logo/logo-udinus.png" alt="Logo UDINUS" onerror="window.imgFallback&&imgFallback(this)"></span>
+        <span class="logo-badge"><img src="assets/logo/logo-kabinet.png" alt="Logo Kabinet Nirwana Arthasena" onerror="window.imgFallback&&imgFallback(this)"></span>
+      </div>
+      <h3>HMTB UDINUS</h3>
+      <p class="footer-desc">Himpunan Mahasiswa Teknik Biomedis<br>Universitas Dian Nuswantoro Semarang</p>
+      <p class="footer-tagline">INNOVATE <span>&bull;</span> INTEGRATE <span>&bull;</span> IMPACT</p>
+      <div class="footer-social" id="footerSocial"></div>
+      <p class="copyright">&copy; 2026 HMTB UDINUS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL DETAIL PROGRAM ================= -->
+  <div class="modal-backdrop" id="programModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Tutup detail program">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img class="modal-img" id="modalImg" alt="" hidden onerror="imgFallback(this)">
+      <div class="modal-body">
+        <span class="modal-num" id="modalNum"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <p class="modal-note" id="modalNote">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Update &amp; dokumentasi kegiatan ini dibagikan melalui Instagram:
+          <a id="modalCta" href="#" target="_blank" rel="noopener">@hmtb_udinus</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
